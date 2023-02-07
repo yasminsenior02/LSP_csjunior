@@ -4,7 +4,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.net.URL;
 
-	public class Fileread {
+	public class Filereader {
 		public String readToString(String resource) throws FileNotFoundException {
 			URL url = getClass().getClassLoader().getResource(resource);
 			
@@ -25,4 +25,4 @@ import java.net.URL;
 			}
 			throw new FileNotFoundException();
 		}
-	}
+}
