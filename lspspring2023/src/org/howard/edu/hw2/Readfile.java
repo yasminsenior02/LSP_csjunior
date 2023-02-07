@@ -13,17 +13,17 @@ public class Readfile {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Fileread fr = new Fileread();
-		HashMap<String, Integer> my_map = new HashMap<String, Integer>(); // creating hashmap to store all words in file
+		HashMap<String, Integer> my_map = new HashMap<String, Integer>(); // I made a hashmap to store my words
 		
 		try {
-			String file_string = fr.readToString("main/java/resources/Word.txt"); //store the text from the file in a string
-			String[] separated = file_string.replaceAll("[^a-zA-z ]", "").toLowerCase().split(" "); //put each word into an array removing all punctuation and spaces
+			String file_string = fr.readToString("main/java/resources/Word.txt"); //this stores my text string in a file 
+			String[] separated = file_string.replaceAll("[^a-zA-z ]", "").toLowerCase().split(" "); //getting rid of punctuation and putting word in an array
 			for (int x = 0; x < separated.length; x++) {
 				if (separated[x].length() > 3) {
-					if (my_map.get(separated[x]) == null) { //if it is not in the hash map, add it and set its value to zero
+					if (my_map.get(separated[x]) == null) { //set value to zero, if not in hashmap
 						my_map.put(separated[x], 1);
 					}
-					else { //if it is in the hash map increment its count
+					else { //increment count if in hashmap
 						my_map.put(separated[x], my_map.get(separated[x]) + 1);
 					}
 				}
