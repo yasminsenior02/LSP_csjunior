@@ -20,7 +20,7 @@ public class Readfile {
 			String[] separated = file_string.replaceAll("[^a-zA-z ]", "").toLowerCase().split(" "); //getting rid of punctuation and putting word in an array
 			for (int x = 0; x < separated.length; x++) {
 				if (separated[x].length() > 3) {
-					if (my_map.get(separated[x]) == null) { //set value to zero, if not in hashmap
+					if (my_map.get(separated[x]) == null) { //set value to zero, if not in  the hashmap
 						my_map.put(separated[x], 1);
 					}
 					else { //increment count if in hashmap
