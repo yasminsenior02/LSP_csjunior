@@ -12,7 +12,7 @@ public class Readfile {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Fileread fr = new Fileread();
+		Filereader fr = new Filereader();
 		HashMap<String, Integer> my_map = new HashMap<String, Integer>(); // I made a hashmap to store my words
 		
 		try {
