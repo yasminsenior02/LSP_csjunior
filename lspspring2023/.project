@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/org/howard/edu/lsp/midterm/word/Document1.docx</name>
+			<type>1</type>
+			<location>/Users/yasminsenior/Downloads/Document1.docx</location>
+		</link>
+	</linkedResources>
 </projectDescription>
